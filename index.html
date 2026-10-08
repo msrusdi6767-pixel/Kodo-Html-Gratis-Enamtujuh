@@ -1,0 +1,836 @@
+```html
+<!DOCTYPE html>
+<html lang="id" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KODE HTML GRATIS ENAMTUJUH!</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0fdf4',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                        },
+                        neon: {
+                            cyan: '#00f2fe',
+                            purple: '#7928ca',
+                            amber: '#ffb703'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        heading: ['Space Grotesk', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #0b0f17;
+            color: #f1f5f9;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+
+        .glow-effect {
+            box-shadow: 0 0 25px rgba(0, 242, 254, 0.25);
+        }
+
+        .glow-button {
+            box-shadow: 0 0 20px rgba(34, 197, 94, 0.4);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .glow-button:hover {
+            box-shadow: 0 0 35px rgba(34, 197, 94, 0.7);
+            transform: translateY(-2px);
+        }
+
+        .step-card {
+            background: linear-gradient(145deg, rgba(30, 41, 59, 0.7), rgba(15, 23, 42, 0.9));
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #090d16;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #00f2fe;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-cyan-500 selection:text-black">
+
+    <header class="border-b border-slate-800 bg-slate-900/60 backdrop-blur-lg sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-400 via-green-500 to-amber-400 flex items-center justify-center text-slate-950 font-black text-xl shadow-lg">
+                    67
+                </div>
+                <div>
+                    <h1 class="font-heading font-extrabold text-lg sm:text-xl tracking-tight text-white">
+                        KODE HTML GRATIS <span class="text-cyan-400">ENAMTUJUH!</span>
+                    </h1>
+                    <p class="text-xs text-slate-400">Pusat Kode HTML AI & Template Siap Pakai</p>
+                </div>
+            </div>
+            <div class="hidden sm:flex items-center gap-2 text-xs text-emerald-400 bg-emerald-950/40 border border-emerald-500/30 px-3 py-1.5 rounded-full">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                Status: Aktif & Gratis
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto px-4 py-8 sm:py-12 w-full flex-grow flex flex-col items-center">
+
+        <!-- Welcome Banner -->
+        <div class="text-center max-w-2xl mx-auto mb-8 space-y-4">
+            <span class="inline-block px-3 py-1 text-xs font-semibold uppercase tracking-wider text-cyan-400 bg-cyan-950/60 border border-cyan-500/30 rounded-full">
+                🚀 Dapatkan Kode Gratis
+            </span>
+            <h2 class="text-2xl sm:text-4xl font-extrabold font-heading text-white leading-tight">
+                Dapatkan Kode HTML Generator Video & Animasi AI
+            </h2>
+            <p class="text-sm sm:text-base text-slate-400">
+                Tekan tombol di bawah ini untuk melihat petunjuk lengkap dan mengambil kode HTML secara gratis.
+            </p>
+        </div>
+
+        <!-- Action Trigger Button -->
+        <div class="my-4 w-full flex justify-center">
+            <button id="btnGetCode" onclick="showContent()" class="glow-button w-full sm:w-auto px-8 py-5 rounded-2xl bg-gradient-to-r from-emerald-500 via-teal-500 to-cyan-500 text-slate-950 font-extrabold text-base sm:text-lg tracking-wide uppercase flex items-center justify-center gap-3 cursor-pointer">
+                <i class="fa-solid fa-code text-xl"></i>
+                <span>TEKAN TOMBOL UNTUK MENDAPATKAN KODE HTML</span>
+            </button>
+        </div>
+
+        <div id="contentArea" class="hidden w-full mt-10 space-y-8 animate-fade-in">
+            
+            <!-- Section Title -->
+            <div class="border-b border-slate-800 pb-4 flex items-center justify-between">
+                <h3 class="font-heading font-bold text-xl sm:text-2xl text-cyan-400 flex items-center gap-2">
+                    <i class="fa-solid fa-book-open text-amber-400"></i> Cara Penggunaan Kode
+                </h3>
+                <span class="text-xs text-slate-500">Ikuti 4 Langkah Praktis</span>
+            </div>
+
+            <!-- Steps Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                
+                <!-- Langkah 1 -->
+                <div class="step-card p-5 rounded-2xl space-y-2 border-l-4 border-l-cyan-400">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-bold uppercase tracking-wider text-cyan-400">Langkah 1</span>
+                        <span class="w-7 h-7 rounded-lg bg-cyan-500/10 text-cyan-400 flex items-center justify-center font-bold text-sm">1</span>
+                    </div>
+                    <p class="text-sm text-slate-200 font-medium">
+                        Buka chrome dan cari <a href="https://gemini.google.com" target="_blank" rel="noopener noreferrer" class="text-cyan-400 underline font-semibold hover:text-cyan-300">gemini.google.com</a>. Setelah di buka websitenya pilih tanda plus yang ini <span class="bg-slate-800 border border-slate-700 text-cyan-400 px-2 py-0.5 rounded font-mono font-bold text-base">+</span>.
+                    </p>
+                </div>
+
+                <!-- Langkah 2 -->
+                <div class="step-card p-5 rounded-2xl space-y-2 border-l-4 border-l-amber-400">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-bold uppercase tracking-wider text-amber-400">Langkah 2</span>
+                        <span class="w-7 h-7 rounded-lg bg-amber-500/10 text-amber-400 flex items-center justify-center font-bold text-sm">2</span>
+                    </div>
+                    <p class="text-sm text-slate-200 font-medium">
+                        Setelah tanda plus, Scroll kebawah dan pencet canvas. Lalu ketik:
+                        <span class="block my-2 p-2.5 bg-slate-950 rounded-xl border border-slate-800 text-amber-300 font-mono text-xs select-all">
+                            "Tampilkan kode html dibawah"
+                        </span>
+                        Dan kasih kodenya dibawah teks itu (Untuk kodenya ada dibawah cara penggunaan kode).
+                    </p>
+                </div>
+
+                <!-- Langkah 3 -->
+                <div class="step-card p-5 rounded-2xl space-y-2 border-l-4 border-l-purple-400">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-bold uppercase tracking-wider text-purple-400">Langkah 3</span>
+                        <span class="w-7 h-7 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center font-bold text-sm">3</span>
+                    </div>
+                    <p class="text-sm text-slate-200 font-medium">
+                        Tunggu gemini menghasilkannya. Setelah menghasilkannya Maka muncul layar dari kode html tersebut.
+                    </p>
+                </div>
+
+                <!-- Langkah 4 -->
+                <div class="step-card p-5 rounded-2xl space-y-2 border-l-4 border-l-emerald-400">
+                    <div class="flex items-center justify-between">
+                        <span class="text-xs font-bold uppercase tracking-wider text-emerald-400">Langkah 4</span>
+                        <span class="w-7 h-7 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center font-bold text-sm">4</span>
+                    </div>
+                    <p class="text-sm text-slate-200 font-medium">
+                        Selamat sekarang kamu bisa memakainya kapan pun dan dimanapun. Nah agar lebih nyaman, pencet tombol <span class="bg-slate-800 border border-slate-700 text-emerald-400 px-2 py-0.5 rounded font-bold">⤢</span> agar layar di perbesar. Dan juga saat kamu keluar dari web dan tidak ada percakapan itu, tekan di kiri atas yang garis 3 lalu ke percakapan tadi kamu.
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Warning Box -->
+            <div class="p-4 rounded-2xl bg-amber-950/40 border border-amber-500/40 text-amber-200 flex items-start gap-3">
+                <i class="fa-solid fa-triangle-exclamation text-amber-400 text-xl mt-0.5"></i>
+                <div class="text-xs sm:text-sm">
+                    <strong class="font-bold text-amber-300">Peringatan!:</strong>
+                    <span> Hanya untuk website agar lebih nyaman dan tidak lama!.</span>
+                </div>
+            </div>
+
+            <div class="space-y-3 pt-4">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-slate-900/90 p-4 rounded-2xl border border-slate-800">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-code text-cyan-400 text-lg"></i>
+                        <h4 class="font-heading font-bold text-base text-white">Kode HTML Siap Salin</h4>
+                    </div>
+                    <button onclick="copyHtmlCode()" id="btnCopy" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-2 transition shadow-lg shadow-cyan-500/20 active:scale-95">
+                        <i class="fa-solid fa-copy text-sm"></i>
+                        <span id="btnCopyText">Salin Semua Kode HTML</span>
+                    </button>
+                </div>
+
+                <!-- Scrollable Code Box -->
+                <div class="relative rounded-2xl border border-slate-800 bg-slate-950 overflow-hidden shadow-2xl">
+                    <div class="bg-slate-900/80 px-4 py-2 border-b border-slate-800 flex items-center justify-between text-xs text-slate-400 font-mono">
+                        <span class="flex items-center gap-1.5">
+                            <span class="w-3 h-3 rounded-full bg-red-500 inline-block"></span>
+                            <span class="w-3 h-3 rounded-full bg-yellow-500 inline-block"></span>
+                            <span class="w-3 h-3 rounded-full bg-green-500 inline-block"></span>
+                            <span class="ml-2 font-sans font-semibold text-slate-300">script-generator.html</span>
+                        </span>
+                        <span>HTML5</span>
+                    </div>
+
+                    <textarea id="rawCodeText" class="sr-only" readonly></textarea>
+                    
+                    <pre class="p-4 text-xs sm:text-sm font-mono text-emerald-400 overflow-x-auto max-h-[450px] leading-relaxed"><code id="codeDisplay"></code></pre>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <footer class="border-t border-slate-800 bg-slate-950/80 py-6 text-center text-xs text-slate-500">
+        <div class="max-w-5xl mx-auto px-4 space-y-2">
+            <p>&copy; KODE HTML GRATIS ENAMTUJUH! - Dibuat untuk Kemudahan Berkreasi</p>
+            <p class="text-[11px] text-slate-600">Gunakan sesuai panduan untuk hasil terbaik di Gemini Canvas.</p>
+        </div>
+    </footer>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="fixed bottom-6 right-6 bg-emerald-500 text-slate-950 px-5 py-3 rounded-xl font-extrabold text-xs shadow-2xl flex items-center gap-2 transform translate-y-20 opacity-0 transition duration-300 z-50">
+        <i class="fa-solid fa-circle-check text-base"></i>
+        <span id="toastMsg">Kode HTML Berhasil Disalin!</span>
+    </div>
+
+    <script>
+        // Source HTML Code to be served
+        const targetHtmlCode = `<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Video & Animation Script Generator</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"><\/script>
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkbg: '#060913',
+                        cardbg: '#0d1322',
+                        cardborder: '#1e293b',
+                        neoncyan: '#00f2fe',
+                        neongold: '#ffb703',
+                        neonpurple: '#7928ca'
+                    },
+                    fontFamily: {
+                        orbitron: ['Orbitron', 'sans-serif'],
+                        jakarta: ['Plus Jakarta Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    <\/script>
+    <style>
+        body {
+            background-color: #060913;
+            color: #e2e8f0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .font-orbitron {
+            font-family: 'Orbitron', sans-serif;
+        }
+        .glow-cyan {
+            box-shadow: 0 0 15px rgba(0, 242, 254, 0.25);
+        }
+        .glow-gold {
+            box-shadow: 0 0 15px rgba(255, 183, 3, 0.25);
+        }
+        .border-glow:focus-within {
+            border-color: #00f2fe;
+            box-shadow: 0 0 10px rgba(0, 242, 254, 0.4);
+        }
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 6px;
+            height: 6px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #060913;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #00f2fe;
+        }
+    </style>
+</head>
+<body class="min-h-screen pb-12">
+
+    <!-- Header -->
+    <header class="border-b border-slate-800 bg-cardbg/80 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-amber-400 flex items-center justify-center text-slate-950 font-bold text-xl shadow-lg shadow-cyan-500/20">
+                    <i class="fa-solid fa-clapperboard"></i>
+                </div>
+                <div>
+                    <h1 class="font-orbitron text-lg sm:text-xl font-black tracking-wider bg-gradient-to-r from-neoncyan via-white to-neongold bg-clip-text text-transparent">
+                        SCRIPT & VISUAL GENERATOR
+                    </h1>
+                    <p class="text-xs text-slate-400">AI Prompt Master Engine v3.1</p>
+                </div>
+            </div>
+            <button onclick="resetForm()" class="px-3 py-1.5 rounded-lg border border-slate-700 bg-slate-900/50 hover:bg-slate-800 text-slate-300 text-xs font-semibold flex items-center gap-2 transition">
+                <i class="fa-solid fa-rotate-left text-amber-400"></i>
+                <span>Reset</span>
+            </button>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8 grid grid-cols-1 lg:grid-cols-12 gap-8">
+        
+        <!-- Left Panel: Form Input -->
+        <section class="lg:col-span-7 space-y-6">
+            
+            <!-- Mode Toggle & AI Model -->
+            <div class="bg-cardbg border border-cardborder rounded-2xl p-5 space-y-4 glow-cyan">
+                <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+                    <!-- Mode Toggle -->
+                    <div class="w-full sm:w-auto flex bg-slate-900 p-1 rounded-xl border border-slate-800">
+                        <button id="mode-video" onclick="setMode('video')" class="flex-1 sm:flex-none px-5 py-2 rounded-lg font-semibold text-xs flex items-center justify-center gap-2 transition bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950 shadow-md">
+                            <i class="fa-solid fa-video"></i> VIDEO (Google Flow)
+                        </button>
+                        <button id="mode-foto" onclick="setMode('foto')" class="flex-1 sm:flex-none px-5 py-2 rounded-lg font-semibold text-xs text-slate-400 hover:text-white flex items-center justify-center gap-2 transition">
+                            <i class="fa-solid fa-image"></i> FOTO (Gemini/ChatGPT)
+                        </button>
+                    </div>
+
+                    <!-- AI Model Dropdown -->
+                    <div class="w-full sm:w-48">
+                        <label class="block text-[10px] font-bold tracking-wider text-slate-400 uppercase mb-1">Model AI</label>
+                        <select id="aiModel" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs text-cyan-300 font-semibold focus:outline-none focus:border-neoncyan">
+                            <option value="Veo 3.1">Google Veo 3.1</option>
+                            <option value="Sora">OpenAI Sora</option>
+                            <option value="Midjourney">Midjourney v6</option>
+                            <option value="Imagen 3">Google Imagen 3</option>
+                            <option value="DALL-E 3">DALL-E 3</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Topic & Preset Panel -->
+            <div class="bg-cardbg border border-cardborder rounded-2xl p-5 space-y-4">
+                <div>
+                    <div class="flex justify-between items-center mb-1.5">
+                        <label class="text-xs font-bold uppercase tracking-wider text-slate-300 flex items-center gap-2">
+                            <i class="fa-solid fa-heading text-neongold"></i> Topik / Judul Konten
+                        </label>
+                        <span class="text-[10px] text-slate-500">Preset Cepat:</span>
+                    </div>
+                    
+                    <!-- Presets -->
+                    <div class="flex flex-wrap gap-2 mb-3">
+                        <button onclick="applyPreset('Motivasi')" class="px-2.5 py-1 rounded-md bg-slate-800 hover:bg-slate-700 text-slate-300 text-[11px] font-medium border border-slate-700 transition">🔥 Motivasi Sukses</button>
+                        <button onclick="applyPreset('Horor')" class="px-2.5 py-1 rounded-md bg-slate-800 hover:bg-slate-700 text-slate-300 text-[11px] font-medium border border-slate-700 transition">👻 Cerita Horor</button>
+                        <button onclick="applyPreset('Affiliate')" class="px-2.5 py-1 rounded-md bg-slate-800 hover:bg-slate-700 text-slate-300 text-[11px] font-medium border border-slate-700 transition">🛒 Review Affiliate</button>
+                        <button onclick="applyPreset('Sains')" class="px-2.5 py-1 rounded-md bg-slate-800 hover:bg-slate-700 text-slate-300 text-[11px] font-medium border border-slate-700 transition">🔬 Edukasi Sains</button>
+                    </div>
+
+                    <input type="text" id="topicInput" placeholder="Contoh: Rahasia sukses orang kaya dalam mengelola waktu..." class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:border-neoncyan transition">
+                </div>
+
+                <!-- Reference Upload -->
+                <div class="border border-dashed border-slate-700 rounded-xl p-4 bg-slate-900/40 hover:border-slate-500 transition">
+                    <div class="flex flex-col sm:flex-row items-center justify-between gap-3">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-lg bg-slate-800 flex items-center justify-center text-cyan-400">
+                                <i class="fa-solid fa-cloud-arrow-up text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-xs font-semibold text-slate-200">Foto Referensi Visual</p>
+                                <p class="text-[10px] text-slate-400" id="fileName">Unggah foto/karakter yang ingin dianalisis</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2 w-full sm:w-auto">
+                            <input type="file" id="fileUpload" class="hidden" accept="image/*" onchange="handleFileUpload(event)">
+                            <button onclick="document.getElementById('fileUpload').click()" class="flex-1 sm:flex-none px-3 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-slate-300 text-xs font-medium border border-slate-600 transition">
+                                Pilih File
+                            </button>
+                            <button onclick="analyzeImage()" class="flex-1 sm:flex-none px-3 py-1.5 rounded-lg bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold text-xs shadow-md transition">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i> Analisis
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Style & Language Customization -->
+            <div class="bg-cardbg border border-cardborder rounded-2xl p-5 grid grid-cols-1 md:grid-cols-2 gap-4">
+                <!-- Visual Style -->
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">
+                        <i class="fa-solid fa-palette text-neoncyan"></i> Gaya Visual
+                    </label>
+                    <select id="visualStyle" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2.5 text-xs text-slate-200 focus:outline-none focus:border-neoncyan">
+                        <option value="3D Pixar Style, vibrant colors, expressive character design, ultra-soft lighting">3D Pixar / Disney</option>
+                        <option value="Cyberpunk 2D Anime style, glowing neon lights, rain reflections, high contrast">Cyberpunk 2D Anime</option>
+                        <option value="Cinematic Realistic, 8k resolution, IMAX ratio, natural lighting, sharp details">Sinematik Realistis</option>
+                        <option value="Comic Book Style, bold ink lines, halftone shading, action composition">Komik / Graphic Novel</option>
+                        <option value="Custom Prompting Style">Custom / Bebas</option>
+                    </select>
+                </div>
+
+                <!-- Language / Dialogue -->
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">
+                        <i class="fa-solid fa-language text-neongold"></i> Bahasa & Gaya Naskah
+                    </label>
+                    <select id="scriptLang" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2.5 text-xs text-slate-200 focus:outline-none focus:border-neongold">
+                        <option value="Indonesia (Formal & Edukatif)">Indonesia (Formal)</option>
+                        <option value="Indonesia (Gaul & Santai / Jakarta-an)">Indonesia (Gaul / Santai)</option>
+                        <option value="Basa Jawa (Krama & Ngoko Casual)">Basa Jawa</option>
+                        <option value="Basa Sunda (Lemes & Halus)">Basa Sunda</option>
+                        <option value="English (Native & Cinematic)">English</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Parameters (Duration, Scenes, Aspect Ratio) -->
+            <div class="bg-cardbg border border-cardborder rounded-2xl p-5 space-y-4">
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <!-- Aspect Ratio -->
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Rasio Aspek</label>
+                        <div class="grid grid-cols-3 gap-1.5">
+                            <button type="button" onclick="setRatio('16:9')" id="ratio-16-9" class="ratio-btn px-2 py-2 rounded-lg bg-slate-900 border border-slate-700 text-xs font-bold text-center text-slate-300 hover:border-cyan-400">16:9</button>
+                            <button type="button" onclick="setRatio('9:16')" id="ratio-9-16" class="ratio-btn px-2 py-2 rounded-lg bg-slate-900 border border-slate-700 text-xs font-bold text-center text-cyan-400 border-neoncyan bg-cyan-950/30">9:16</button>
+                            <button type="button" onclick="setRatio('1:1')" id="ratio-1-1" class="ratio-btn px-2 py-2 rounded-lg bg-slate-900 border border-slate-700 text-xs font-bold text-center text-slate-300 hover:border-cyan-400">1:1</button>
+                        </div>
+                    </div>
+
+                    <!-- Scene Count -->
+                    <div>
+                        <div class="flex justify-between items-center mb-2">
+                            <label class="text-xs font-bold uppercase tracking-wider text-slate-300">Jumlah Scene</label>
+                            <span id="sceneVal" class="text-xs font-bold text-neoncyan">5 Scene</span>
+                        </div>
+                        <input type="range" id="sceneRange" min="1" max="15" value="5" oninput="document.getElementById('sceneVal').innerText = this.value + ' Scene'" class="w-full accent-cyan-400 bg-slate-800 rounded-lg cursor-pointer">
+                    </div>
+
+                    <!-- Duration Estimator -->
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Estimasi Durasi</label>
+                        <select id="durationEstimate" class="w-full bg-slate-900 border border-slate-700 rounded-lg px-3 py-2 text-xs text-slate-200 focus:outline-none">
+                            <option value="15-30 Detik (Shorts/TikTok)">15 - 30 Detik</option>
+                            <option value="30-60 Detik (Reels)">30 - 60 Detik</option>
+                            <option value="1-3 Menit (Youtube Short Story)">1 - 3 Menit</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Additional Notes -->
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-1">Catatan Tambahan / Instruksi Khusus</label>
+                    <textarea id="extraNotes" rows="2" placeholder="Contoh: Tambahkan efek sound effect dramatis, lighting neon hijau, transisi cepat..." class="w-full bg-slate-900 border border-slate-700 rounded-xl px-3 py-2 text-xs text-slate-200 placeholder-slate-600 focus:outline-none focus:border-neoncyan"></textarea>
+                </div>
+            </div>
+
+            <!-- Generate Button -->
+            <button onclick="generateMasterPrompt()" class="w-full py-4 rounded-xl bg-gradient-to-r from-neoncyan via-cyan-400 to-neongold text-slate-950 font-orbitron font-black text-sm tracking-wider uppercase shadow-xl hover:shadow-cyan-500/20 hover:scale-[1.01] active:scale-[0.99] transition duration-200 flex items-center justify-center gap-3">
+                <i class="fa-solid fa-bolt text-lg"></i>
+                <span>Generate Prompt Master</span>
+            </button>
+
+        </section>
+
+        <!-- Right Panel: Output & Preview -->
+        <section class="lg:col-span-5 space-y-4">
+            <div class="bg-cardbg border border-cardborder rounded-2xl p-5 h-full flex flex-col justify-between shadow-2xl relative overflow-hidden">
+                <div class="absolute -right-10 -top-10 w-40 h-40 bg-cyan-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+                <div>
+                    <!-- Header Result -->
+                    <div class="flex items-center justify-between pb-4 border-b border-slate-800">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-code-merge text-neongold"></i>
+                            <h2 class="font-orbitron font-bold text-sm tracking-wide text-slate-200">MASTER OUTPUT</h2>
+                        </div>
+                        <span id="outputBadge" class="text-[10px] font-bold px-2.5 py-1 rounded-full bg-slate-800 text-cyan-400 border border-cyan-500/30 uppercase">Ready</span>
+                    </div>
+
+                    <!-- Placeholder / Generated Script Container -->
+                    <div id="outputContainer" class="mt-4 space-y-4 text-xs font-mono max-h-[550px] overflow-y-auto pr-1">
+                        
+                        <!-- Initial Placeholder -->
+                        <div id="placeholder" class="py-20 text-center space-y-3">
+                            <div class="w-16 h-16 rounded-2xl bg-slate-900 border border-slate-800 flex items-center justify-center mx-auto text-slate-600">
+                                <i class="fa-solid fa-wand-magic-sparkles text-2xl"></i>
+                            </div>
+                            <p class="text-slate-400 text-xs font-jakarta">Isi parameter di sebelah kiri lalu klik<br><strong class="text-neoncyan">"GENERATE PROMPT MASTER"</strong></p>
+                        </div>
+
+                        <!-- Generated Content Dynamic -->
+                        <div id="generatedResult" class="hidden space-y-4 font-jakarta text-slate-300">
+                            <!-- Master Prompt Box -->
+                            <div class="bg-slate-900/90 border border-cyan-500/30 rounded-xl p-3.5 space-y-2">
+                                <div class="flex justify-between items-center border-b border-slate-800 pb-2">
+                                    <span class="font-orbitron text-[11px] font-bold text-neoncyan uppercase tracking-wider">🎯 Master Prompt AI</span>
+                                    <button onclick="copyToClipboard('masterPromptText')" class="px-2 py-1 rounded bg-slate-800 hover:bg-slate-700 text-[10px] text-slate-300 border border-slate-700 flex items-center gap-1 transition">
+                                        <i class="fa-solid fa-copy"></i> Copy
+                                    </button>
+                                </div>
+                                <p id="masterPromptText" class="text-xs font-mono text-slate-300 leading-relaxed bg-slate-950 p-2.5 rounded-lg border border-slate-800/80 select-all"></p>
+                            </div>
+
+                            <!-- Scene Breakdown list -->
+                            <div class="space-y-3">
+                                <h3 class="font-orbitron text-xs font-bold text-neongold uppercase tracking-wider">🎬 Breakdown Scene</h3>
+                                <div id="scenesList" class="space-y-3">
+                                    <!-- Dynamic scenes rendered here -->
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Footer Info / Global Copy Button -->
+                <div class="pt-4 border-t border-slate-800/80 mt-4 flex items-center justify-between text-[10px] text-slate-500">
+                    <span>Engine Status: <strong class="text-emerald-400">Online</strong></span>
+                    <span>Format: Optimized for AI Generators</span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Notification Toast -->
+    <div id="toast" class="fixed bottom-5 right-5 bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950 px-4 py-3 rounded-xl font-bold text-xs shadow-2xl flex items-center gap-2 transform translate-y-20 opacity-0 transition duration-300 z-50">
+        <i class="fa-solid fa-circle-check"></i>
+        <span id="toastMsg">Teks berhasil disalin!</span>
+    </div>
+
+    <!-- JavaScript Logic -->
+    <script>
+        let currentMode = 'video';
+        let currentRatio = '9:16';
+
+        function setMode(mode) {
+            currentMode = mode;
+            const btnVideo = document.getElementById('mode-video');
+            const btnFoto = document.getElementById('mode-foto');
+            const modelSelect = document.getElementById('aiModel');
+
+            if (mode === 'video') {
+                btnVideo.className = "flex-1 sm:flex-none px-5 py-2 rounded-lg font-semibold text-xs flex items-center justify-center gap-2 transition bg-gradient-to-r from-cyan-500 to-blue-600 text-slate-950 shadow-md";
+                btnFoto.className = "flex-1 sm:flex-none px-5 py-2 rounded-lg font-semibold text-xs text-slate-400 hover:text-white flex items-center justify-center gap-2 transition";
+                
+                modelSelect.innerHTML = \`
+                    <option value="Veo 3.1">Google Veo 3.1</option>
+                    <option value="Sora">OpenAI Sora</option>
+                    <option value="Runway Gen-3">Runway Gen-3</option>
+                    <option value="Luma Dream Machine">Luma Dream Machine</option>
+                \`;
+            } else {
+                btnFoto.className = "flex-1 sm:flex-none px-5 py-2 rounded-lg font-semibold text-xs flex items-center justify-center gap-2 transition bg-gradient-to-r from-amber-400 to-amber-500 text-slate-950 shadow-md";
+                btnVideo.className = "flex-1 sm:flex-none px-5 py-2 rounded-lg font-semibold text-xs text-slate-400 hover:text-white flex items-center justify-center gap-2 transition";
+                
+                modelSelect.innerHTML = \`
+                    <option value="Midjourney v6">Midjourney v6</option>
+                    <option value="Imagen 3">Google Imagen 3</option>
+                    <option value="DALL-E 3">DALL-E 3</option>
+                    <option value="Flux 1.1 Pro">Flux 1.1 Pro</option>
+                \`;
+            }
+        }
+
+        function setRatio(ratio) {
+            currentRatio = ratio;
+            document.querySelectorAll('.ratio-btn').forEach(btn => {
+                btn.className = "ratio-btn px-2 py-2 rounded-lg bg-slate-900 border border-slate-700 text-xs font-bold text-center text-slate-300 hover:border-cyan-400";
+            });
+            const selectedBtn = document.getElementById(\`ratio-\${ratio.replace(':', '-')}\`);
+            if (selectedBtn) {
+                selectedBtn.className = "ratio-btn px-2 py-2 rounded-lg bg-slate-900 border border-neoncyan text-xs font-bold text-center text-cyan-400 bg-cyan-950/30";
+            }
+        }
+
+        function applyPreset(type) {
+            const topicInput = document.getElementById('topicInput');
+            const styleSelect = document.getElementById('visualStyle');
+            
+            if (type === 'Motivasi') {
+                topicInput.value = "Perjalanan seorang pengusaha muda dari nol hingga bangkit dari kegagalan";
+                styleSelect.value = "Cinematic Realistic, 8k resolution, IMAX ratio, natural lighting, sharp details";
+            } else if (type === 'Horor') {
+                topicInput.value = "Misteri sosok penunggu stasiun kereta tua yang tak berpenghuni jam 3 pagi";
+                styleSelect.value = "Cyberpunk 2D Anime style, glowing neon lights, rain reflections, high contrast";
+            } else if (type === 'Affiliate') {
+                topicInput.value = "Review gadget lampu meja RGB pintar serbaguna dengan harga terjangkau";
+                styleSelect.value = "3D Pixar Style, vibrant colors, expressive character design, ultra-soft lighting";
+            } else if (type === 'Sains') {
+                topicInput.value = "Bagaimana lubang hitam (Black Hole) menghancurkan dan membiaskan cahaya di luar angkasa";
+                styleSelect.value = "Cinematic Realistic, 8k resolution, IMAX ratio, natural lighting, sharp details";
+            }
+            showToast(\`Preset \${type} berhasil dimuat!\`);
+        }
+
+        function handleFileUpload(event) {
+            const file = event.target.files[0];
+            if (file) {
+                document.getElementById('fileName').innerText = \`File: \${file.name}\`;
+                showToast("Foto referensi diunggah.");
+            }
+        }
+
+        function analyzeImage() {
+            const fileInput = document.getElementById('fileUpload');
+            if (!fileInput.files.length) {
+                showToast("Silakan pilih foto referensi terlebih dahulu!");
+                return;
+            }
+            showToast("Menganalisis elemen visual, warna & karakter...");
+            setTimeout(() => {
+                document.getElementById('extraNotes').value += " [Referensi Visual: Karakter berambut pendek, jaket kulit hitam, pencahayaan moody warm blue-gold]";
+                showToast("Analisis selesai! Detail ditambahkan ke Catatan.");
+            }, 1200);
+        }
+
+        function resetForm() {
+            document.getElementById('topicInput').value = '';
+            document.getElementById('extraNotes').value = '';
+            document.getElementById('fileUpload').value = '';
+            document.getElementById('fileName').innerText = 'Unggah foto/karakter yang ingin dianalisis';
+            document.getElementById('placeholder').classList.remove('hidden');
+            document.getElementById('generatedResult').classList.add('hidden');
+            document.getElementById('outputBadge').innerText = 'Ready';
+            document.getElementById('outputBadge').className = 'text-[10px] font-bold px-2.5 py-1 rounded-full bg-slate-800 text-cyan-400 border border-cyan-500/30 uppercase';
+            showToast("Form telah di-reset.");
+        }
+
+        function generateMasterPrompt() {
+            const topic = document.getElementById('topicInput').value.trim();
+            if (!topic) {
+                showToast("Isi Topik / Judul Konten terlebih dahulu!");
+                return;
+            }
+
+            const model = document.getElementById('aiModel').value;
+            const style = document.getElementById('visualStyle').value;
+            const lang = document.getElementById('scriptLang').value;
+            const scenesCount = parseInt(document.getElementById('sceneRange').value);
+            const notes = document.getElementById('extraNotes').value.trim();
+
+            // Render Master Prompt
+            const masterText = \`[MODE: \${currentMode.toUpperCase()}] | [MODEL: \${model}] | [RATIO: \${currentRatio}]
+Subject: \${topic}
+Visual Style: \${style}
+Script Language Style: \${lang}
+Instruction: Generate hyper-detailed \${currentMode} prompts for each scene with seamless continuity. \${notes ? 'Notes: ' + notes : ''}\`;
+
+            document.getElementById('masterPromptText').innerText = masterText;
+
+            // Generate Mock Scenes
+            const scenesList = document.getElementById('scenesList');
+            scenesList.innerHTML = '';
+
+            const sampleDialogues = {
+                "Indonesia (Formal)": ["Ingatlah, kegagalan hanyalah langkah awal menuju keberhasilan.", "Banyak yang menyerah tepat sebelum kemenangan mereka tiba.", "Kuncinya adalah konsistensi dan tekad yang tak tergoyahkan."],
+                "Indonesia (Gaul)": ["Lu pernah ngerasa udah usaha mati-matian tapi tetep gagal?", "Jangan keburu drop, bro! Justru di titik ini lu lagi diuji.", "Buktikan kalau lu bisa bangkit lebih kuat dari sebelumnya!"],
+                "Basa Jawa": ["Ojo gampang nyerah nalika ngadepi pacobaning urip.", "Kabeh perjuangan iku mesti bakal ono hasile sing indah.", "Maju terus, buktike yen kowe iso sukses!"],
+                "Basa Sunda": ["Ulah gampang nyerah pikeun ngagapai cita-cita.", "Kahayang tanpa usaha eta ngan saukur impian hampa.", "Tembongkeun yen anjeun mampu ngahontal kasuksesan!"],
+                "English": ["Success is not final, failure is not fatal: it is the courage to continue.", "Every great achiever was once a beginner who refused to quit.", "Keep pushing forward, your time is coming soon."]
+            };
+
+            const selectedLangKey = Object.keys(sampleDialogues).find(k => lang.includes(k.split(' ')[0])) || "Indonesia (Formal)";
+            const dialoguePool = sampleDialogues[selectedLangKey];
+
+            for (let i = 1; i <= scenesCount; i++) {
+                const dialogue = dialoguePool[(i - 1) % dialoguePool.length];
+                const sceneCard = document.createElement('div');
+                sceneCard.className = "bg-slate-900 border border-slate-800 rounded-xl p-3.5 space-y-2 hover:border-slate-700 transition";
+                
+                const promptDetail = \`\${currentMode === 'video' ? 'Camera Motion: Slow pan in.' : 'Framing: Medium Shot.'} \${topic} scene \${i}, rendered in \${style}, lighting cinematic, photorealistic quality, 8k resolution --ar \${currentRatio.replace(':', ' -ar ')}\`;
+
+                sceneCard.innerHTML = \`
+                    <div class="flex justify-between items-center border-b border-slate-800/80 pb-2">
+                        <span class="font-orbitron font-bold text-xs text-amber-400">SCENE \${i}</span>
+                        <button onclick="copyText('scene-prompt-\${i}')" class="text-[10px] text-slate-400 hover:text-cyan-300 flex items-center gap-1 bg-slate-800/80 px-2 py-0.5 rounded border border-slate-700">
+                            <i class="fa-solid fa-copy"></i> Copy Scene Prompt
+                        </button>
+                    </div>
+                    <div>
+                        <span class="text-[10px] text-slate-500 uppercase font-bold block">Visual Prompt (\${model}):</span>
+                        <p id="scene-prompt-\${i}" class="text-xs font-mono text-slate-300 bg-slate-950 p-2 rounded mt-1 border border-slate-800/50">\${promptDetail}</p>
+                    </div>
+                    <div>
+                        <span class="text-[10px] text-slate-500 uppercase font-bold block">Voiceover / Voice Script:</span>
+                        <p class="text-xs italic text-amber-200/90 mt-0.5">"\${dialogue}"</p>
+                    </div>
+                \`;
+                scenesList.appendChild(sceneCard);
+            }
+
+            // Hide placeholder, show output
+            document.getElementById('placeholder').classList.add('hidden');
+            document.getElementById('generatedResult').classList.remove('hidden');
+            
+            // Update badge
+            const badge = document.getElementById('outputBadge');
+            badge.innerText = 'Generated';
+            badge.className = 'text-[10px] font-bold px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 uppercase';
+
+            showToast("Master Prompt & Scene berhasil dibuat!");
+        }
+
+        function copyToClipboard(elementId) {
+            const text = document.getElementById(elementId).innerText;
+            navigator.clipboard.writeText(text);
+            showToast("Master Prompt disalin ke clipboard!");
+        }
+
+        function copyText(elementId) {
+            const text = document.getElementById(elementId).innerText;
+            navigator.clipboard.writeText(text);
+            showToast("Scene prompt disalin!");
+        }
+
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            const toastMsg = document.getElementById('toastMsg');
+            toastMsg.innerText = message;
+            
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            toast.classList.add('translate-y-0', 'opacity-100');
+
+            setTimeout(() => {
+                toast.classList.remove('translate-y-0', 'opacity-100');
+                toast.classList.add('translate-y-20', 'opacity-0');
+            }, 2500);
+        }
+    <\/script>
+</body>
+</html>`;
+
+        // Load source code into display element and hidden textarea
+        window.addEventListener('DOMContentLoaded', () => {
+            document.getElementById('codeDisplay').textContent = targetHtmlCode;
+            document.getElementById('rawCodeText').value = targetHtmlCode;
+        });
+
+        // Toggle content visibility on button press
+        function showContent() {
+            const contentArea = document.getElementById('contentArea');
+            contentArea.classList.remove('hidden');
+            
+            // Scroll smoothly to instructions
+            contentArea.scrollIntoView({ behavior: 'smooth' });
+
+            showToast("Panduan & Kode HTML Berhasil Ditampilkan!");
+        }
+
+        // Copy HTML Code Function
+        function copyHtmlCode() {
+            const rawText = targetHtmlCode;
+
+            // Use execCommand fallback for seamless iFrame / cross-browser support
+            const textarea = document.createElement('textarea');
+            textarea.value = rawText;
+            textarea.style.position = 'fixed';
+            textarea.style.opacity = '0';
+            document.body.appendChild(textarea);
+            textarea.select();
+            
+            try {
+                document.execCommand('copy');
+                
+                // Update button UI state temporarily
+                const btnCopyText = document.getElementById('btnCopyText');
+                const originalText = btnCopyText.innerText;
+                btnCopyText.innerText = "BERHASIL DISALIN! ✓";
+                
+                showToast("Kode HTML berhasil disalin ke clipboard!");
+
+                setTimeout(() => {
+                    btnCopyText.innerText = originalText;
+                }, 3000);
+            } catch (err) {
+                showToast("Gagal menyalin otomatis. Silakan salin secara manual.");
+            } finally {
+                document.body.removeChild(textarea);
+            }
+        }
+
+        // Toast Popup Helper
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            const toastMsg = document.getElementById('toastMsg');
+            toastMsg.innerText = message;
+            
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            toast.classList.add('translate-y-0', 'opacity-100');
+
+            setTimeout(() => {
+                toast.classList.remove('translate-y-0', 'opacity-100');
+                toast.classList.add('translate-y-20', 'opacity-0');
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
+```
